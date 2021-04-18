@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('imgs/fundoColor.jpg');
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+
+}
+
+.instagram-conteudo {
+    display:flex;
+    align-items: center;
+    justify-content: start;
+    width:60%;
+    height: 100vh;
+}
+
+.instagram-celular {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-celular img {
+    height: 50rem;
+}
+
+.instagram-continue {
+
+    display:flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.grupo {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('imgs/bolaFundo.png');
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    opacity: 90%;
+}
+
+.grupo:nth-child(1){
+    min-height: 19rem;
+}
+
+.letreiroLogo {
+    height: 3rem;
+}
+
+.fotoPerfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.fotoPerfil img {
+    height: 8rem;
+}
+
+.instagram-login {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+.instagram-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account{
+    color: rgb(160, 160, 160);
+}
+
+.link-blue{
+    color: #0095f6;
+}
+
+.get-app{
+    color: #ff4500;
+}
+
+.get-the-app {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.down {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('imgs/logoApple.png');
+}
+
+.app-download:nth-child(2){
+    background-image: url('imgs/logoGoogle.png');
+}
+
+/* media queries*/
+
+@media (max-width:1024px){
+    .instagram-conteudo{
+        width:90%;
+    }
+}
+
+@media (max-width:650px){
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-conteudo{
+        width: 90%;
+    }
+
+.instagram-celular{
+    display: none;
+}
+
+.instagram-continue{
+    width:100%;
+}
+
+.grupo{
+    border: 1px solid transparent;
+}
+}
+
